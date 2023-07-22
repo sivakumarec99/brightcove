@@ -17,6 +17,7 @@
 		DD31BFD82A69A91000B7A1E0 /* brightcoveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD31BFD72A69A91000B7A1E0 /* brightcoveTests.swift */; };
 		DD31BFE22A69A91000B7A1E0 /* brightcoveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD31BFE12A69A91000B7A1E0 /* brightcoveUITests.swift */; };
 		DD31BFE42A69A91000B7A1E0 /* brightcoveUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD31BFE32A69A91000B7A1E0 /* brightcoveUITestsLaunchTests.swift */; };
+		DD31BFFB2A69AB2600B7A1E0 /* USdata.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD31BFFA2A69AB2600B7A1E0 /* USdata.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		DD31BFDD2A69A91000B7A1E0 /* brightcoveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = brightcoveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD31BFE12A69A91000B7A1E0 /* brightcoveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = brightcoveUITests.swift; sourceTree = "<group>"; };
 		DD31BFE32A69A91000B7A1E0 /* brightcoveUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = brightcoveUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DD31BFFA2A69AB2600B7A1E0 /* USdata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USdata.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +103,12 @@
 		DD31BFBC2A69A90F00B7A1E0 /* brightcove */ = {
 			isa = PBXGroup;
 			children = (
-				DD31BFBD2A69A90F00B7A1E0 /* AppDelegate.swift */,
-				DD31BFBF2A69A90F00B7A1E0 /* SceneDelegate.swift */,
-				DD31BFC12A69A90F00B7A1E0 /* ViewController.swift */,
-				DD31BFC32A69A90F00B7A1E0 /* Main.storyboard */,
-				DD31BFC92A69A90F00B7A1E0 /* Assets.xcassets */,
-				DD31BFCB2A69A90F00B7A1E0 /* LaunchScreen.storyboard */,
-				DD31BFCE2A69A90F00B7A1E0 /* Info.plist */,
-				DD31BFC62A69A90F00B7A1E0 /* brightcove.xcdatamodeld */,
+				DD31BFF62A69A9F000B7A1E0 /* AppInfo */,
+				DD31BFF52A69A9C800B7A1E0 /* Storage */,
+				DD31BFF42A69A9B300B7A1E0 /* LaunchScreen */,
+				DD31BFF32A69A9A600B7A1E0 /* Assets */,
+				DD31BFF22A69A95D00B7A1E0 /* Main */,
+				DD31BFF02A69A92300B7A1E0 /* MainDelegate */,
 			);
 			path = brightcove;
 			sourceTree = "<group>";
@@ -128,6 +128,81 @@
 				DD31BFE32A69A91000B7A1E0 /* brightcoveUITestsLaunchTests.swift */,
 			);
 			path = brightcoveUITests;
+			sourceTree = "<group>";
+		};
+		DD31BFF02A69A92300B7A1E0 /* MainDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				DD31BFBD2A69A90F00B7A1E0 /* AppDelegate.swift */,
+				DD31BFBF2A69A90F00B7A1E0 /* SceneDelegate.swift */,
+			);
+			path = MainDelegate;
+			sourceTree = "<group>";
+		};
+		DD31BFF22A69A95D00B7A1E0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				DD31BFF92A69AAE900B7A1E0 /* Model */,
+				DD31BFF82A69AAD900B7A1E0 /* Controler */,
+				DD31BFF72A69AACD00B7A1E0 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		DD31BFF32A69A9A600B7A1E0 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				DD31BFC92A69A90F00B7A1E0 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		DD31BFF42A69A9B300B7A1E0 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				DD31BFCB2A69A90F00B7A1E0 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		DD31BFF52A69A9C800B7A1E0 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				DD31BFC62A69A90F00B7A1E0 /* brightcove.xcdatamodeld */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		DD31BFF62A69A9F000B7A1E0 /* AppInfo */ = {
+			isa = PBXGroup;
+			children = (
+				DD31BFCE2A69A90F00B7A1E0 /* Info.plist */,
+			);
+			path = AppInfo;
+			sourceTree = "<group>";
+		};
+		DD31BFF72A69AACD00B7A1E0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DD31BFC32A69A90F00B7A1E0 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DD31BFF82A69AAD900B7A1E0 /* Controler */ = {
+			isa = PBXGroup;
+			children = (
+				DD31BFC12A69A90F00B7A1E0 /* ViewController.swift */,
+			);
+			path = Controler;
+			sourceTree = "<group>";
+		};
+		DD31BFF92A69AAE900B7A1E0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DD31BFFA2A69AB2600B7A1E0 /* USdata.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +338,7 @@
 			files = (
 				DD31BFC82A69A90F00B7A1E0 /* brightcove.xcdatamodeld in Sources */,
 				DD31BFC22A69A90F00B7A1E0 /* ViewController.swift in Sources */,
+				DD31BFFB2A69AB2600B7A1E0 /* USdata.swift in Sources */,
 				DD31BFBE2A69A90F00B7A1E0 /* AppDelegate.swift in Sources */,
 				DD31BFC02A69A90F00B7A1E0 /* SceneDelegate.swift in Sources */,
 			);
